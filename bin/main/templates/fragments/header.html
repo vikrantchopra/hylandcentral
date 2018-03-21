@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" media="screen" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar navbar-custom navbar-fixed-top" th:fragment="header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My project</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li th:classappend="${page == 'home' ? 'active' : ''}"><a href="#" th:href="@{/}">Home</a></li>
+                <li th:classappend="${page == 'booklist' ? 'active' : ''}"><a href="/employees" th:href="@{/employees}">Employees</a></li>
+                <li th:classappend="${page == 'comments' ? 'active' : ''}"><a href="/comments" th:href="@{/comments}">Comments</a></li>
+                <li th:classappend="${page == 'userlist' ? 'active' : ''}"><a href="#" th:href="@{#}">About</a></li>
+            </ul>
+                       
+        </div>
+        <!-- <form style="visibility:hidden" id="form" method="post" action="#" th:action="@{/logout}"></form> -->
+        <!--/.nav-collapse -->
+    </div>
+</div>
+</body>
+</html>

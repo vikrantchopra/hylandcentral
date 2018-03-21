@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Spring Boot + JPA + Datatables</title>
+	<link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" media="screen" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,28 +14,25 @@
 </head>
 
 <body>
-	<h4>Employee Table</h4>
-	<table id="employeesTable" class="table table-striped table-bordered" style="width:99%">
-      
-       <!-- Header Table -->
-       <thead>
-            <tr>
-                <th>Id</th>
-				<th>Name</th>
-                <th>Username</th>
-                <th>EmpId</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Title</th>
-                <th>Team</th>
-                <th>Seat</th>
-                <th>Extension</th>
-                <th>Manager</th>
-            </tr>
-        </thead>
-        <!-- Footer Table -->
-        
-    </table>
     
-</body>
+    	<div th:replace="fragments/header :: header"></div>
+    	<br/><br/><br/>
+        <div class="col-md-8">
+        <h2 style="text-align:center" class="blueColor">Welcome to the Bookshop Store</h2>
+		
+		<p style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
+			Looking for a good read! You have arrived at the right place. Browse through our immense collection of books and
+			find something suitable for you. Our collection is wide, varied and eclectic. The range of subjects that we cover 
+			hardly leaves out any subject under the sun. We have something for everyone, be it for a kid or for a teenager or a 
+			grownup. We have the hard-to-understand stuff for the scientific minds and science oriented, we have fun for the humorous.
+			 
+		</p>
+		<p style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
+			We always stock-up good for the curious minds, with our puzzles galore and mind bending challenges. Sit and relax,
+			sip a cup of fresh-brewed coffee, prop up your feet and enjoy a good read. Reading never goes out of fashion! Leave a comment
+			if you wish to. 
+		</p>
+		<p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+	</div>
+    </body>
 </html>

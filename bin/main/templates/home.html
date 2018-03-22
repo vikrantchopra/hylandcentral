@@ -18,21 +18,36 @@
     	<div th:replace="fragments/header :: header"></div>
     	<br/><br/><br/>
         <div class="col-md-8">
-        <h2 style="text-align:center" class="blueColor">Welcome to the Bookshop Store</h2>
+        <h2 style="text-align:center" class="blueColor">Welcome Hyland Kolkata</h2>
 		
+		<p-fieldset legend="What is Scrum" style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
+		    Scrum is a lean philosophy of software development. It is more of a prescriptive framework within which it offers freedom and ownership to 
+		the teams to develop quality software. It borrows and builds on good practices from other lean and rapid development frameworks, like Extreme 
+		Programming. 
 		<p style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
-			Looking for a good read! You have arrived at the right place. Browse through our immense collection of books and
-			find something suitable for you. Our collection is wide, varied and eclectic. The range of subjects that we cover 
-			hardly leaves out any subject under the sun. We have something for everyone, be it for a kid or for a teenager or a 
-			grownup. We have the hard-to-understand stuff for the scientific minds and science oriented, we have fun for the humorous.
-			 
+		  It has certain mandatory artifacts in the form of planning meeting, daily standups, Review meeting and Retrospective. These meetings are 
+		  imperative for the smooth functioning of the Scrum Process. Planning ensures the teams are aware of what they are developing in short 
+		  time-boxed sprint. Its a commitment that the teams have to adhere to. Daily standups are usually the first things that happen in the scrum 
+		  world. Every team member attends this meeting to discuss his/her contribution the previous day and subsequent plan of action and highlighting 
+		  whatever impedes the progress. Review or Demo is made by the team to the stakeholders to showcase their product and get feedback from them 
+		  which may require further action. Retrospective, is a meeting for the team to address issues and set the things right.
 		</p>
-		<p style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
-			We always stock-up good for the curious minds, with our puzzles galore and mind bending challenges. Sit and relax,
-			sip a cup of fresh-brewed coffee, prop up your feet and enjoy a good read. Reading never goes out of fashion! Leave a comment
-			if you wish to. 
-		</p>
-		<p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+		</p-fieldset>
+		
+		
+		
+		<p-fieldset legend="Scrum Manifesto" toggleable="true" style="padding: 10px; font-family:Comic Sans MS; font-size: 16px">
+		
+		
+		<ul>
+		  <li>Individuals and interactions over processes and tools</li>
+		  <li>Working software over comprehensive documentation</li>
+		  <li>Customer collaboration over contract negotiation</li>
+		  <li>Responding to change over following a plan</li>
+		</ul>
+		
+		</p-fieldset>
+		
 	</div>
     </body>
 </html>

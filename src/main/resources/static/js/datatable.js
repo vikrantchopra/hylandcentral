@@ -1,6 +1,6 @@
 $(document).ready( function () {
 	 var table = $('#employeesTable').DataTable({
-			"sAjaxSource": "/api/employees/all",
+			"sAjaxSource": "/hylandcentral/api/employees/all",
 			"sAjaxDataProp": "",
 			"order": [[ 0, "asc" ]],
 			"aoColumns": [
